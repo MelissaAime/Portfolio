@@ -1,5 +1,4 @@
 import React from "react";
-import * as ReactIcons from 'react-icons/bs'
 
 export const Iconos = ({icon, title, ruta}) => {
     return(
