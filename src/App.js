@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import './Styles/Styles.scss';
 import './App.css';
+import { useContext } from "react";
+import { Navbar } from './Sections/Navbar/Navbar';
+import { Loading } from './Components/Loading/Loading';
+import { LanguageContext } from './Context/LanguageContext';
+import { Contact } from './Sections/Contact/Contact';
+import { MyProfile } from './Sections/MyProfile/MyProfile';
 
 function App() {
-  return (
+
+  const { loading } = useContext(LanguageContext);
+
+  return loading ? (
+		<Loading/>
+	) : (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <div className='preback'>
+        <MyProfile/>
+        <Contact/>
+      </div>
+      
     </div>
   );
 }
