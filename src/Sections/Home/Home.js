@@ -1,9 +1,9 @@
 import { Title } from "../../Components/Title/Title"
 
-export const Contact = () => {
+export const Home = () => {
     return(
         <div className="preback">
-            <Title title={"Contacto"}/>
+            <Title title={"Home"}/>
             <p> waertyujrsewertyujtgrfedsfghfrf</p>
         </div>
     )

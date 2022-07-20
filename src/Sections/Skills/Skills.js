@@ -3,7 +3,7 @@ import { FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaGithub, FaJs, FaReact, FaPyt
 
 export const Skills = () => {
     return(
-        <>
+        <div className="preback">
             <Module icon={ <FaHtml5/> } title={"HTML"} percent={90}/>
             <Module icon={ <FaCss3Alt/> } title={"CSS"} percent={85}/>
             <Module icon={ <FaSass/> } title={"SASS"} percent={85}/>
@@ -12,6 +12,6 @@ export const Skills = () => {
             <Module icon={ <FaJs/> } title={"JavaScript"} percent={50}/>
             <Module icon={ <FaReact/> } title={"React JS"} percent={75}/>
             <Module icon={ <FaPython/> } title={"Python"} percent={55}/>
-        </>
+        </div>
     )
 }
