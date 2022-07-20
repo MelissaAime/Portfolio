@@ -1,19 +1,18 @@
 .skill{
     color: white;
-    font-size: 1.2rem;
+    margin: 1.5rem;
     
     &-progress{
         background-color: white;
-        width: 1rem;
     }
 }
-// .progress-bar{
-//     background-color: $active;
-//     animation: progreso 3s linear;
+.progress-bar{
+    background-color: $active;
+    animation: progreso 2s linear;
 
-// }
-// @keyframes progreso {
-//     0% {
-//         width: 0;
-//     }
-// }
+}
+@keyframes progreso {
+    0% {
+        width: 0;
+    }
+}
