@@ -1,0 +1,31 @@
+.contact-links{
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    background-color: $active;
+    width: 35%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 2em;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    p{
+        &:hover{
+            text-shadow: 0.1em 0.1em 0.2em black;
+        }
+    }
+    h5{
+        &:hover{
+            text-shadow: 0.1em 0.1em 0.2em black;
+        }
+    }
+}
