@@ -1,0 +1,19 @@
+.text{
+    color: white;
+    font-family: $font1;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 1.5rem;
+    margin: 5rem 0 3rem 3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(10) 5s 1 normal both, blink 1s steps(1) infinite;   
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 90%;
+        }
+    }
+}

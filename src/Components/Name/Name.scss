@@ -1,0 +1,26 @@
+.name{
+    color: white;
+    font-family: $font1;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin: 5rem 0 1rem 3rem;
+    border-right: .15em solid $active;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: blink 1s steps(1) infinite;
+    animation: typing 4s steps(10) 1s 1 normal both, blink 1s steps(1) infinite;   
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 90%;
+        }
+    }
+}

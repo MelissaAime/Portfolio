@@ -1,5 +1,10 @@
 .title{
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $font1;
+    text-transform: uppercase;
     text-align: center;
+
+    &-borde{
+        border-top: .3rem solid $grey;
+    }
 }

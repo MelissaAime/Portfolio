@@ -1,0 +1,36 @@
+.home{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "text img";
+
+    .home-sect1{
+        grid-area: text;
+    }
+    .home-sect2{
+        grid-area: img;
+    }
+    &-img{
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 25rem;
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        
+        &:hover{
+            width: 15.2rem;
+            height: 15.2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .home{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "img"
+                            "text";
+    }
+}
